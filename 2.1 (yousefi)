@@ -1,216 +1,93 @@
 
-int led1 = D0; 
+int led1 = D0;
+int led2 = D7;
 
-int led2 = D7; 
+
+void dash(){
+
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  delay(5000);
+  digitalWrite(led1, LOW);
+  ditigalWrite(led2, LOW);
+  delay(1000);
+}
+
+void dot() {
+  
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  delay(3000);
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  
+}
+
 void setup() {
 
- 
   pinMode(led1, OUTPUT);
-  pinMode(led2, OUTPUT);
-
+  pinmode(led2, OUTPUT);
 }
 
 
 
 void loop() {
+
+  //Y -.--
+  
+  dash();
+  dot();
+  dash();
+  dash();
+  
+  delay(2000);
+  
+  //O ---
+  
+  dash();
+  dash();
+  dash();
+  
+  delay(2000);
+  
+  //U ..-
+  
+  dot();  
+  dot();
+  dash();
+  
+  delay(2000);
+  
+  //S ...
+  
+  dot();
+  dot();
+  dot();
+  
+  delay(2000);
+  
+  //E .
+  
+  dot();
+  
+  delay(2000);
+  
+  //F 	..-.
+  
+  dot();
+  dot();
+  dash();
+  dot();
+  
+  delay(2000);
+  
+  //I ..
+  
+  dot();
+  dot();
+  
+  delay(3000);
+  
  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-   
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(5000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(2000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(1000);
-  
-  digitalWrite(led1, HIGH);
-  digitalWrite(led2, HIGH);
-  delay(3000);
-  
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
-  delay(5000);
-  
 }
-
